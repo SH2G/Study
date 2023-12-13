@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>join_from.html</title>
+	<style>
+		table, th, tr, td{
+			border-collapse: collapse;
+			padding: 3px;
+		}
+	</style>	
+</head>
+<body>
+	<h3>회원 가입 양식</h3>
+	<form>
+		<table>
+			<tr>
+				<td>- 아이디</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>- 비밀번호</td>
+				<td><input type="password"></td>
+			</tr>
+			<tr>
+				<td>- 비밀번호 확인</td>
+				<td><input type="password"></td>
+			</tr>
+			<tr>
+				<td>- 이름</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>- 성별</td>
+				<td>
+					<input type="radio" id="gender1" name="gender" value="yes">
+				  <label for="gender1">여성</label>
+					<input type="radio" id="gender2" name="gender" value="yes">
+				  <label for="gender2">남성</label>
+			</td>
+			</tr>
+			<tr>
+				<td>- 전화번호</td>
+				<td> <select name="region">
+					<option value="Seoul">02</option>
+					<option value="Gyeonggi-do">031</option>
+					<option value="Incheon">032</option>
+					<option value="Gangwon-do">033</option>
+					<option value="Chungcheongnam-do">041</option>
+					<option value="Daejeon">042</option>
+					<option value="Chungcheongbuk-do">043</option>
+					<option value="Busan">051</option>
+					<option value="Ulsan">052</option>
+					<option value="Daegu">053</option>
+					<option value="Gyeongsangbuk-do">054</option>
+					<option value="Gyeongsangnam-do">055</option>
+					<option value="Jeollanam-do">061</option>
+					<option value="Gwanju">062</option>
+					<option value="-Jeollabuk-do">063</option>
+					<option value="Jeju-do">064</option>
+				</select> - <input type="text"> - <input type="text"></td>
+			</tr>
+			<tr>
+				<td>- 이메일</td>
+				<td><input type="text" size="5"> @ 
+					<select name="email">
+						<option value="select">선택</option>
+					<option value="naver">naver.com</option>
+					<option value="gmail">gmail.com</option>
+					<option value="daum">daum.net</option></td>
+			</tr>
+			<tr>
+				<td>- 자기소개</td>
+				<td><textarea cols="35" rows="5"></textarea></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
