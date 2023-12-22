@@ -10,11 +10,12 @@
 
 	<script>
 		var userNumber = prompt("숫자를 입력하시오.")
-		
-		if(userNumber % 4 === 0)
-			alert("4의 배수입니다.")
-		else
-			alert("4의 배수가 아닙니다.")
+		if (userNumber !== null) {   // 입력받은 값이 null이 아니면
+			if(userNumber % 4 === 0)
+				document.write(userNumber + "는 4의 배수입니다.")
+			else
+				document.write(userNumber + "는 4의 배수가 아닙니다.")
+		}
 	</script>
 </body>
 </html>
